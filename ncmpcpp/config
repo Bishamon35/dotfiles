@@ -1,0 +1,57 @@
+# ----- GENERAL SETTINGS -----
+#
+ncmpcpp_directory = "~/.config/ncmpcpp"
+lyrics_directory = "~/.local/share/lyrics"
+mpd_host = "localhost"
+mpd_port = "6600"
+mpd_connection_timeout = "5"
+mpd_music_dir = "~/Music"
+mpd_crossfade_time = "5"
+#
+# ----- VISUALIZER -----
+#
+audio_output {
+	type		"fifo"
+	name		"Visualizer feed"
+	path		"/tmp/mpd.fifo"
+	format		"44100:16:1"
+}
+visualizer_data_source = "/tmp/mpd.fifo"
+visualizer_output_name = "Visualizer feed"
+visualizer_in_stereo = "no"
+visualizer_type = "spectrum"
+visualizer_fps = "60"
+visualizer_autoscale = "yes"
+visualizer_look = "●▮"
+visualizer_color = "137, 167, 161, 126, 62, 34, 38, 65"
+visualizer_spectrum_smooth_look = "yes"
+visualizer_spectrum_dft_size = "2"
+#
+# ----- INTERFACE -----
+#
+user_interface = "alternative"
+playlist_editor_display_mode = "columns"
+search_engine_display_mode = "columns"
+browser_display_mode = "columns"
+playlist_display_mode = "columns"
+playlist_show_mpd_host = "yes"
+now_playing_prefix = "$(167)> "
+selected_item_prefix = "- "
+#
+# ----- COLORS -----
+#
+colors_enabled = "yes"
+main_window_color = "246"
+header_window_color = "246"
+volume_color = "161"
+statusbar_color = "246"
+progressbar_color = "65"
+progressbar_elapsed_color = "65"
+song_columns_list_format = "(25)[167]{a} (40)[34]{t} (25)[137]{b} (10)[38]{l}"
+song_list_format = "{$(167)%a$9}{$(34)%t$9}|{$(34)%f$9}{$(137)%b$9}{$(38)%l$9}"
+alternative_header_first_line_format = "{$(126)%t$9}|{$(126)%f$9}"
+alternative_header_second_line_format = "{$(62)%a$9}{$(62) - %b$9}"
+current_item_prefix = "$(246)$r"
+current_item_suffix = "$/r$0"
+current_item_inactive_column_prefix = "$(246)"
+#
