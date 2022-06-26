@@ -3,7 +3,7 @@
 zstyle ':completion:*' completer _complete _ignored _approximate
 zstyle ':completion:*' matcher-list '' 'r:|[._-]=* r:|=*' 'm:{[:lower:]}={[:upper:]} m:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'l:|=* r:|=*'
 zstyle ':completion:*' max-errors 3
-zstyle :compinstall filename '/home/promising/.zshrc'
+zstyle :compinstall filename '~/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -12,12 +12,15 @@ compinit
 HISTFILE=~/.histfile
 HISTSIZE=5000
 SAVEHIST=5000
-setopt autocd beep
+setopt autocd beep nomatch
 bindkey -e
 # End of lines configured by zsh-newuser-install
 
-#export PATH="${HOME}/bin:${PATH}"
+AUTO_CD=true
+
 export PATH="${HOME}/.local/bin:${PATH}"
+
+#source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ZSH_HIGHLIGHT_STYLES[reserved-word]='fg=33'
@@ -35,3 +38,4 @@ ZSH_HIGHLIGHT_STYLES[dollar-quoted-argument-unclosed]='fg=160'
 ZSH_HIGHLIGHT_STYLES[comment]='fg=240'
 ZSH_HIGHLIGHT_STYLES[arg0]='fg=33'
 ZSH_HIGHLIGHT_STYLES[command]='fg=33'
+

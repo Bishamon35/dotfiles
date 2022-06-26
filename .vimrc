@@ -4,6 +4,7 @@ set ttyfast
 set laststatus=2
 set number
 set hlsearch
+set incsearch
 set mouse=a
 set scrolloff=3
 set matchpairs +=<:>
@@ -17,6 +18,8 @@ set cursorline
 
 syntax on
 filetype plugin indent on
+
+let mapleader = ' '
 
 " ----- PLUGINS -----
 

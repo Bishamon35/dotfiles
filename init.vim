@@ -4,6 +4,7 @@ set ttyfast
 set laststatus=2
 set number
 set hlsearch
+set incsearch
 set mouse=a
 set scrolloff=3
 set matchpairs +=<:>
@@ -45,13 +46,13 @@ call plug#end()
 " ----- COLORSCHEME -----
 
 let g:lightline = {
-	\ 'colorscheme': 'solarized',
+	\ 'colorscheme' : 'solarized',
 	\ }
-
 let g:solarized_italic_comments = v:true
 let g:solarized_borders = v:true
 let g:solarized_disable_background = v:true
 
+set background=light
 colorscheme solarized
 
 " ----- NERD TREE -----
