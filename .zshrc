@@ -21,6 +21,8 @@ AUTO_CD=true
 setopt append_history hist_expire_dups_first hist_find_no_dups hist_ignore_dups inc_append_history share_history
 
 export PATH="${HOME}/.local/bin:${PATH}"
+export VISUAL=vim
+export EDITOR=vim -e
 
 #source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
