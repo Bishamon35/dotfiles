@@ -46,7 +46,7 @@ call plug#end()
 " ----- COLORSCHEME -----
 
 let g:lightline = {
-	\ 'colorscheme' : 'solarized',
+	\ 'colorscheme' : 'solarized'
 	\ }
 let g:solarized_italic_comments = v:true
 let g:solarized_borders = v:true

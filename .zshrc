@@ -22,7 +22,7 @@ setopt append_history hist_expire_dups_first hist_find_no_dups hist_ignore_dups 
 
 export PATH="${HOME}/.local/bin:${PATH}"
 export VISUAL=vim
-export EDITOR=vim -e
+export EDITOR=vim
 
 #source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
