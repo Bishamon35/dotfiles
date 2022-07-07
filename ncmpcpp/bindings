@@ -13,9 +13,9 @@ def_key "k"
 def_key "j"
 	scroll_down
 #
-#def_key "shift-down"
-#  select_item
-#  scroll_down
+def_key "v"
+  select_item
+  scroll_down
 #
 #def_key "["
 #  scroll_up_album
@@ -44,8 +44,8 @@ def_key "ctrl-f"
 #def_key "insert"
 #  select_item
 #
-#def_key "enter"
-#	enter_directory
+def_key "l"
+	enter_directory
 #
 #def_key "enter"
 #  toggle_output
@@ -149,11 +149,11 @@ def_key "9"
 def_key "0"
 	show_server_info
 #
-#def_key "s"
-#  stop
+def_key "s"
+  stop
 #
-#def_key "p"
-#  pause
+def_key "p"
+  pause
 #
 def_key "¡"
 	next
@@ -182,11 +182,11 @@ def_key "'"
 #def_key "b"
 #  seek_backward
 #
-#def_key "r"
-#  toggle_repeat
+def_key "r"
+  toggle_repeat
 #
-#def_key "z"
-#  toggle_random
+def_key "z"
+  toggle_random
 #
 #def_key "y"
 #  save_tag_changes
@@ -239,20 +239,20 @@ def_key "'"
 #def_key "ctrl-f"
 #  apply_filter
 #
-#def_key "ctrl-_"
-#  select_found_items
+def_key "ctrl-space"
+  select_found_items
 #
 #def_key "/"
 #  find
 #
-#def_key "/"
-#  find_item_forward
+def_key "/"
+  find_item_forward
 #
 #def_key "?"
 #  find
 #
-#def_key "?"
-#  find_item_backward
+def_key "?"
+  find_item_backward
 #
 def_key "n"
 	next_found_item
@@ -290,17 +290,17 @@ def_key "N"
 #def_key "g"
 #  jump_to_position_in_song
 #
-#def_key "l"
-#  show_lyrics
+def_key "<"
+  show_lyrics
 #
 #def_key "ctrl-v"
 #  select_range
 #
-#def_key "v"
-#  reverse_selection
+def_key "V"
+  reverse_selection
 #
-#def_key "V"
-#  remove_selection
+def_key "ctrl-v"
+  remove_selection
 #
 #def_key "B"
 #  select_album
@@ -308,11 +308,11 @@ def_key "N"
 #def_key "a"
 #  add_selected_items
 #
-#def_key "c"
-#  clear_playlist
+def_key "c"
+  clear_playlist
 #
-#def_key "c"
-#  clear_main_playlist
+def_key "c"
+  clear_main_playlist
 #
 #def_key "C"
 #  crop_playlist
@@ -323,17 +323,17 @@ def_key "N"
 #def_key "m"
 #  move_sort_order_up
 #
-#def_key "m"
-#  move_selected_items_up
-#
 def_key ","
-	move_sort_order_down
+  move_selected_items_up
 #
-def_key ","
+#def_key ","
+#	move_sort_order_down
+#
+def_key "."
 	move_selected_items_down
 #
-#def_key "M"
-#  move_selected_items_to
+def_key "M"
+  move_selected_items_to
 #
 #def_key "A"
 #  add
@@ -368,8 +368,8 @@ def_key ","
 #def_key "!"
 #  toggle_separators_between_albums
 #
-#def_key "L"
-#  toggle_lyrics_fetcher
+def_key ">"
+  toggle_lyrics_fetcher
 #
 #def_key "F"
 #  fetch_lyrics_in_background
@@ -392,6 +392,6 @@ def_key ","
 #def_key "ctrl-p"
 #  set_selected_items_priority
 #
-#def_key "q"
-#  quit
+def_key "q"
+  quit
 #

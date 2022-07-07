@@ -11,7 +11,7 @@ local o = {
 
 	-----Script Settings----
 	auto_run_list_idle = 'recents', --Auto run the list when opening mpv and there is no video / file loaded. 'none' for disabled. Or choose between: 'all', 'recents', 'distinct', 'protocols', 'fileonly', 'titleonly', 'timeonly', 'keywords'.
-	resume_offset = -0.5, --change to 0 so item resumes from the exact position, or decrease the value so that it gives you a little preview before loading the resume point
+	resume_offset = -5, --change to 0 so item resumes from the exact position, or decrease the value so that it gives you a little preview before loading the resume point
 	osd_messages = true, --true is for displaying osd messages when actions occur. Change to false will disable all osd messages generated from this script
 	resume_notification = true, --true so that when a file that is played previously, a notification to resume to the previous reached time will be triggered
 	resume_notification_threshold = 2, --0 to always show a resume notification when the same video has been played previously, a value such as 5 will only show the resume notification if the last played time starts after 5% of the video and ends before completion by 5%
