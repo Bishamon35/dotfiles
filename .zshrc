@@ -24,6 +24,7 @@ export PATH="${HOME}/.local/bin:${PATH}"
 export VISUAL=vim
 export EDITOR=vim
 export GOPATH="${HOME}/.local:${PATH}"
+export LC_ALL="en_US.utf-8"
 
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=245'
@@ -44,8 +45,3 @@ ZSH_HIGHLIGHT_STYLES[dollar-quoted-argument-unclosed]='fg=160'
 ZSH_HIGHLIGHT_STYLES[comment]='fg=245'
 ZSH_HIGHLIGHT_STYLES[arg0]='fg=33'
 ZSH_HIGHLIGHT_STYLES[command]='fg=33'
-
-#Aliases
-
-alias cat='bat'
-alias ls = 'exa'
