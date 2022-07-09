@@ -1,15 +1,15 @@
 #!/bin/bash
 
-mkdir -p ~/.local/share/mpd/playlists
+mkdir -p "$HOME"/.local/share/mpd/playlists
 
-ln -sbf ~/Git/dotfiles/lf ~/.config/lf
-ln -sbf ~/Git/dotfiles/mpv ~/.config/mpv
-ln -sbf ~/Git/dotfiles/ncmpcpp ~/.config/ncmpcpp
-ln -sbf ~/Git/dotfiles/.gitconfig ~/.gitconfig
-ln -sbf ~/Git/dotfiles/.vimrc ~/.vimrc
-ln -sbf ~/Git/dotfiles/.zshrc ~/.zshrc
-mkdir -p ~/.config/nvim | ln -sbf ~/Git/dotfiles/init.vim ~/.config/nvim/
-mkdir -p ~/.config/mpd | ln -sbf ~/Git/dotfiles/mpd.conf ~/.config/mpd/
-mkdir -p ~/.local/share/nvim/site/autoload | ln -sbf ~/Git/dotfiles/plug.vim ~/.local/share/nvim/site/autoload/plug.vim
-mkdir -p ~/.vim/autoload | ln -sbf ~/Git/dotfiles/plug.vim ~/.vim/autoload/plug.vim
+ln -sbf "$HOME"/Git/dotfiles/lf "$HOME"/.config/lf
+ln -sbf "$HOME"/Git/dotfiles/mpv "$HOME"/.config/mpv
+ln -sbf "$HOME"/Git/dotfiles/ncmpcpp "$HOME"/.config/ncmpcpp
+ln -sbf "$HOME"/Git/dotfiles/.gitconfig "$HOME"/.gitconfig
+ln -sbf "$HOME"/Git/dotfiles/.vimrc "$HOME"/.vimrc
+ln -sbf "$HOME"/Git/dotfiles/.zshrc "$HOME"/.zshrc
+mkdir -p "$HOME"/.config/nvim && ln -sbf "$HOME"/Git/dotfiles/init.vim "$HOME"/.config/nvim/
+mkdir -p "$HOME"/.config/mpd && ln -sbf "$HOME"/Git/dotfiles/mpd.conf "$HOME"/.config/mpd/
+mkdir -p "$HOME"/.local/share/nvim/site/autoload && ln -sbf "$HOME"/Git/dotfiles/plug.vim "$HOME"/.local/share/nvim/site/autoload/plug.vim
+mkdir -p "$HOME"/.vim/autoload && ln -sbf "$HOME"/Git/dotfiles/plug.vim "$HOME"/.vim/autoload/plug.vim
 
